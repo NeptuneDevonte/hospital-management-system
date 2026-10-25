@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Heart with ECG heartbeat</title>
+  <desc id="desc">Minimalist blue and teal medical heart icon with a heartbeat rhythm line on a white background.</desc>
+  <defs>
+    <linearGradient id="heartGradient" x1="95" y1="90" x2="410" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#12B8A6"/>
+    </linearGradient>
+    <linearGradient id="pulseGradient" x1="58" y1="260" x2="454" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F80ED"/>
+      <stop offset="1" stop-color="#0FAEAA"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="#FFFFFF"/>
+  <path d="M256 420
+           C231 399 112 309 91 225
+           C73 155 113 104 169 104
+           C208 104 237 127 256 158
+           C275 127 304 104 343 104
+           C399 104 439 155 421 225
+           C400 309 281 399 256 420Z"
+        fill="url(#heartGradient)" fill-opacity=".12"
+        stroke="url(#heartGradient)" stroke-width="13"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58 266 H151
+           L184 266 L207 218 L239 320
+           L274 174 L310 266 H350
+           C369 266 378 251 391 251
+           H454"
+        fill="none" stroke="#FFFFFF" stroke-width="24"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58 266 H151
+           L184 266 L207 218 L239 320
+           L274 174 L310 266 H350
+           C369 266 378 251 391 251
+           H454"
+        fill="none" stroke="url(#pulseGradient)" stroke-width="12"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="58" cy="266" r="6" fill="#2F80ED"/>
+  <circle cx="454" cy="251" r="6" fill="#12B8A6"/>
+</svg>

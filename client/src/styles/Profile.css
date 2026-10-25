@@ -1,0 +1,69 @@
+.profile-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.user-summary {
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border-left: 4px solid #007bff;
+}
+
+.user-summary h3 {
+    margin-bottom: 8px;
+    color: #2d3748;
+}
+
+.user-summary p {
+    margin: 4px 0;
+    color: #4a5568;
+}
+
+.profile-card h2 {
+    margin-bottom: 20px;
+    color: #2d3748;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+.profile-card h3 {
+    margin: 20px 0 10px 0;
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.btn-save {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}

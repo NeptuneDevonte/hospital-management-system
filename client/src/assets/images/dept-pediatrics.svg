@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Friendly stork carrying a baby bundle</title>
+  <desc id="desc">A gentle, minimalist pastel illustration of a stork carrying a wrapped bundle, on a white background, for a pediatric medical center.</desc>
+  <rect width="512" height="512" fill="#FFFFFF"/>
+  <defs>
+    <linearGradient id="wing" x1="135" y1="150" x2="315" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BFEFE0"/>
+      <stop offset="1" stop-color="#8DD9CF"/>
+    </linearGradient>
+    <linearGradient id="blanket" x1="280" y1="235" x2="390" y2="355" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#BFE6FF"/>
+      <stop offset="1" stop-color="#8FCDF4"/>
+    </linearGradient>
+  </defs>
+  <!-- Stork body -->
+  <path d="M122 293
+           C95 263 96 216 120 182
+           C146 145 193 132 228 151
+           C253 164 268 188 267 216
+           C266 245 244 266 214 271
+           C188 276 166 292 153 318
+           C144 337 126 350 108 345
+           C91 340 91 320 104 307Z"
+        fill="#F7FCFB" stroke="#B8DCD8" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Wing -->
+  <path d="M130 237
+           C145 191 187 173 221 190
+           C241 200 247 221 233 239
+           C214 264 177 278 145 268Z"
+        fill="url(#wing)" stroke="#8CCFC5" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M151 237 C171 216 194 211 216 218" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+  <!-- Neck -->
+  <path d="M224 178
+           C235 150 249 123 272 112
+           C289 104 307 111 312 126
+           C317 141 305 151 292 160
+           C278 170 271 188 273 211
+           L276 236
+           C278 251 267 263 253 259
+           C240 256 237 244 239 230
+           L242 199Z"
+        fill="#F7FCFB" stroke="#B8DCD8" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Head -->
+  <path d="M268 117 C278 91 307 82 328 96 C344 107 346 128 333 143 C322 157 298 160 282 147Z"
+        fill="#F7FCFB" stroke="#B8DCD8" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Beak -->
+  <path d="M330 116 L389 128 L335 139Z" fill="#F4C85D" stroke="#E4B64D" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Eye and blush -->
+  <circle cx="316" cy="115" r="4.5" fill="#557A86"/>
+  <circle cx="329" cy="132" r="6" fill="#F6C6BD" opacity=".85"/>
+  <!-- Legs -->
+  <path d="M130 331 L121 373 M149 326 L151 370" fill="none" stroke="#F0B94D" stroke-width="7" stroke-linecap="round"/>
+  <path d="M121 373 L103 378 M121 373 L133 382 M151 370 L137 379 M151 370 L166 376" fill="none" stroke="#F0B94D" stroke-width="6" stroke-linecap="round"/>
+  <!-- Bundle cloth -->
+  <path d="M273 246
+           C292 224 328 224 349 245
+           L391 285
+           C405 298 403 317 389 328
+           L347 361
+           C333 372 314 369 303 356
+           L266 311
+           C250 292 255 264 273 246Z"
+        fill="url(#blanket)" stroke="#83C5EB" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M272 250 C298 267 330 298 350 359" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+  <path d="M282 240 C309 253 342 282 365 315" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <!-- Baby face -->
+  <circle cx="303" cy="245" r="27" fill="#FFE2C7" stroke="#F5C7A7" stroke-width="3"/>
+  <path d="M282 237 C286 219 303 212 317 222" fill="none" stroke="#F4C85D" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="295" cy="246" r="2.8" fill="#65818A"/>
+  <circle cx="312" cy="246" r="2.8" fill="#65818A"/>
+  <path d="M299 256 Q304 261 309 256" fill="none" stroke="#D98F83" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="288" cy="253" r="4" fill="#F5B9B1" opacity=".8"/>
+  <circle cx="319" cy="253" r="4" fill="#F5B9B1" opacity=".8"/>
+  <!-- Soft decorative sparkles -->
+  <path d="M389 180 V202 M378 191 H400" stroke="#F4C85D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M192 94 V110 M184 102 H200" stroke="#9EDFD1" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="407" cy="225" r="5" fill="#B7E8DD"/>
+  <circle cx="218" cy="350" r="5" fill="#F6D57E"/>
+</svg>
