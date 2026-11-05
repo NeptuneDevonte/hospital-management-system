@@ -1,12 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Home.css'; // Optional: for custom styling if needed
+import '../styles/Home.css';
+
+// Import images so Vite bundles them correctly for both local and production builds
+import heroBanner from '../assets/images/hero-banner.jpg';
+import emergencyBanner from '../assets/images/banner-emergency.jpg';
+import deptCardiology from '../assets/images/dept-cardiology.svg';
+import deptNeurology from '../assets/images/dept-neurology.svg';
+import deptPediatrics from '../assets/images/dept-pediatrics.svg';
 
 const Home = () => {
     return (
         <div className="home-container">
             {/* Hero Section */}
-            <section className="hero-section" style={{ backgroundImage: `url('/src/assets/images/hero-banner.jpg')` }}>
+            <section className="hero-section" style={{ backgroundImage: `url(${heroBanner})` }}>
                 <div className="hero-overlay">
                     <div className="hero-content">
                         <h1>Welcome to City Hospital Management System</h1>
@@ -21,7 +28,7 @@ const Home = () => {
 
             {/* Emergency Banner Section */}
             <section className="emergency-banner">
-                <img src="/src/assets/images/banner-emergency.jpg" alt="Emergency Care" className="emergency-img" />
+                <img src={emergencyBanner} alt="Emergency Care" className="emergency-img" />
                 <div className="emergency-text">
                     <h3>24/7 Emergency Medical Services</h3>
                     <p>Call us immediately or visit our emergency ward for urgent medical assistance.</p>
@@ -33,17 +40,17 @@ const Home = () => {
                 <h2>Our Specialized Departments</h2>
                 <div className="dept-grid">
                     <div className="dept-card">
-                        <img src="/src/assets/images/dept-cardiology.svg" alt="Cardiology" />
+                        <img src={deptCardiology} alt="Cardiology" />
                         <h3>Cardiology</h3>
                         <p>Advanced heart care and cardiovascular diagnostics.</p>
                     </div>
                     <div className="dept-card">
-                        <img src="/src/assets/images/dept-neurology.svg" alt="Neurology" />
+                        <img src={deptNeurology} alt="Neurology" />
                         <h3>Neurology</h3>
                         <p>Specialized treatment for brain, spine, and nervous system disorders.</p>
                     </div>
                     <div className="dept-card">
-                        <img src="/src/assets/images/dept-pediatrics.svg" alt="Pediatrics" />
+                        <img src={deptPediatrics} alt="Pediatrics" />
                         <h3>Pediatrics</h3>
                         <p>Comprehensive healthcare for infants, children, and adolescents.</p>
                     </div>
