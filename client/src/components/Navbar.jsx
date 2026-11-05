@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import logo from '../assets/images/logo.svg';
 
 const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-brand">
                 <Link to="/">
-                    <img src="/src/assets/images/logo.svg" alt="Hospital Logo" className="navbar-logo" />
+                    <img src={logo} alt="Hospital Logo" className="navbar-logo" />
                     <span>City Hospital</span>
                 </Link>
             </div>
