@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 // Base URL for your Node.js backend server
 const API = axios.create({
   baseURL: import.meta.env.PROD 
