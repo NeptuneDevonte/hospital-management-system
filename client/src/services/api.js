@@ -1,5 +1,9 @@
 // Base URL for your Node.js backend server
-const API_BASE_URL = 'http://localhost:5000/api';
+const API = axios.create({
+  baseURL: import.meta.env.PROD 
+    ? 'https://hospital-management-system-23in.onrender.com/api' 
+    : 'http://localhost:5000/api',
+});
 
 // Generic helper function for API requests
 const apiRequest = async (endpoint, method = 'GET', data = null, token = null) => {
