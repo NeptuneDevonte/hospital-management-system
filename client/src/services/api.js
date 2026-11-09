@@ -1,13 +1,13 @@
 import axios from 'axios';
 
-// Base URL for your Node.js backend server
+// Base URL configuration for your Node.js backend server
 const API = axios.create({
-  baseURL: import.meta.env.PROD 
-    ? 'https://hospital-management-system-23in.onrender.com/api' 
-    : 'http://localhost:5000/api',
+    baseURL: import.meta.env.PROD 
+        ? 'https://hospital-management-system-23in.onrender.com/api' 
+        : 'http://localhost:5000/api',
 });
 
-// Generic helper function for API requests
+// Generic helper function for API requests using Axios
 const apiRequest = async (endpoint, method = 'GET', data = null, token = null) => {
     const headers = {
         'Content-Type': 'application/json',
@@ -17,27 +17,18 @@ const apiRequest = async (endpoint, method = 'GET', data = null, token = null) =
         headers['Authorization'] = `Bearer ${token}`;
     }
 
-    const config = {
-        method,
-        headers,
-    };
-
-    if (data) {
-        config.body = JSON.stringify(data);
-    }
-
     try {
-        const response = await fetch(`${API_BASE_URL}${endpoint}`, config);
-        const result = await response.json();
-
-        if (!response.ok) {
-            throw new Error(result.message || 'Something went wrong');
-        }
-
-        return result;
+        const response = await API({
+            url: endpoint,
+            method,
+            headers,
+            data: data ? data : undefined,
+        });
+        return response.data;
     } catch (error) {
-        console.error('API Error:', error.message);
-        throw error;
+        const errorMessage = error.response?.data?.message || error.message || 'Something went wrong';
+        console.error('API Error:', errorMessage);
+        throw new Error(errorMessage);
     }
 };
 
